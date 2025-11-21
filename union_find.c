@@ -22,9 +22,8 @@ int find(UnionFind *uf, int x){
     if (uf->pai[x] != x){
         uf->pai[x] = find(uf, uf->pai[x]);
     }
-    else{
-        return uf->pai[x];
-    }
+    return uf->pai[x];
+
 }
 
 void unir(UnionFind *uf, int a, int b){
