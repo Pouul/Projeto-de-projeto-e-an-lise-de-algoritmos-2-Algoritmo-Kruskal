@@ -1,3 +1,8 @@
+//inegrantes
+//Jiye Huang RA: 10438990
+//Gustavo Kiyoshi Ikeda RA: 10439179
+//Pedro Montarroyos de Pinho RA: 10440213
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "grafo.h"

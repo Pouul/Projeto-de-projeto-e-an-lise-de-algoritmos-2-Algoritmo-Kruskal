@@ -60,11 +60,12 @@ void ler_arquivo(Grafo *g, const char *nome_arquivo) {
     int o, d, p;
     while (fscanf(arq, "%d %d %d", &o, &d, &p) == 3) {
         inserir_arestas(g, o, d, p);
+        //verifica o maior vertice 
+        if (o > g->n_vertices) g->n_vertices = o;
+        if (d > g->n_vertices) g->n_vertices = d;
     }
 
-     // Atualiza número de vértices
-    if (o > g->n_vertices) g->n_vertices = o;
-    if (d > g->n_vertices) g->n_vertices = d;
+    
 
     fclose(arq);
 }

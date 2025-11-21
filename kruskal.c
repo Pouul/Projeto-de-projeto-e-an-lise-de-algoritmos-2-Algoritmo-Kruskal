@@ -13,7 +13,7 @@ void kruskal(Grafo *g) {
     int total = 0;          // contador para verificar numero de elementos percorrido
     int custo_total = 0;    // custo acumulado
 
-    printf("elementos dentro do uf");
+    printf("elementos dentro do uf:\n");
     // percorrer o grafo
     for (int i = 0; i < g->n_arestas; i++) {
 
