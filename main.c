@@ -3,6 +3,8 @@
 //Gustavo Kiyoshi Ikeda RA: 10439179
 //Pedro Montarroyos de Pinho RA: 10440213
 
+//limitação: maior elemento precisa ser o numero de elemento do grafo
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "grafo.h"
@@ -12,7 +14,7 @@ int main() {
     // criar grafo
     Grafo g = novo_grafo();
     // ler e colocar no grafo
-    ler_arquivo(&g, "grafo1.txt");
+    ler_arquivo(&g, "in.txt");
 
     printf("Número de arestas lidas: %d\n", g.n_arestas);
     printf("Número de vértices estimado: %d\n", g.n_vertices);
