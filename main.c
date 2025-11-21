@@ -12,7 +12,7 @@ int main() {
     // criar grafo
     Grafo g = novo_grafo();
     // ler e colocar no grafo
-    ler_arquivo(&g, "grafo.txt");
+    ler_arquivo(&g, "grafo1.txt");
 
     printf("Número de arestas lidas: %d\n", g.n_arestas);
     printf("Número de vértices estimado: %d\n", g.n_vertices);
