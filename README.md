@@ -1,1 +1,0 @@
-# Projeto-de-projeto-e-an-lise-de-algoritmos-2-Algoritmo-Kruskal
