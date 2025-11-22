@@ -34,6 +34,7 @@ int main() {
     printf("\n==== KRUSKAL ====\n");
     kruskal(&g);
 
+    //libera arestas
     free(g.arestas);
     return 0;
 }

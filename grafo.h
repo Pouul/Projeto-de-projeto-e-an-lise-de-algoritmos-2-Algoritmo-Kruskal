@@ -19,6 +19,7 @@ typedef struct{
     Aresta *arestas;
 }Grafo;
 
+//funções do grafo
 Grafo novo_grafo();
 Aresta nova_aresta(int o, int d, int custo);
 void inserir_arestas(Grafo *g, int o, int d, int custo);

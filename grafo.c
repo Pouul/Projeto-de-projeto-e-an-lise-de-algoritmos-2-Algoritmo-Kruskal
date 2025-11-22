@@ -22,10 +22,11 @@ Grafo novo_grafo(){
     return g;
 }
 
+//insere aresta no grafo
 void inserir_arestas(Grafo *g, int o, int d, int custo){
     
     if (g->n_arestas == g->capacidade) {
-
+        
         if (g->capacidade == 0)
             g->capacidade = 2;
         else
@@ -49,6 +50,7 @@ void inserir_arestas(Grafo *g, int o, int d, int custo){
     g->n_arestas++;
 }
 
+//ler o arquivo e guardar no grafo
 void ler_arquivo(Grafo *g, const char *nome_arquivo) {
     FILE *arq = fopen(nome_arquivo, "r");
     if (arq == NULL) {
@@ -64,12 +66,10 @@ void ler_arquivo(Grafo *g, const char *nome_arquivo) {
         if (o > g->n_vertices) g->n_vertices = o;
         if (d > g->n_vertices) g->n_vertices = d;
     }
-
-    
-
     fclose(arq);
 }
 
+//forma de ordenação qsort
 int comparar_arestas(const void *a, const void *b) {
     const Aresta *A = (const Aresta *)a;
     const Aresta *B = (const Aresta *)b;

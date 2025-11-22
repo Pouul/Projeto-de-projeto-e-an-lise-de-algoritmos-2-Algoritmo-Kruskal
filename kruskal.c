@@ -42,6 +42,6 @@ void kruskal(Grafo *g) {
     }
 
     printf("\nCusto total = %d\n", custo_total);
-
+    //liberar uf
     liberar_unionfind(&uf);
 }

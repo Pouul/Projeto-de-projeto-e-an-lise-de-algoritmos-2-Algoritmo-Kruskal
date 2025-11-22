@@ -18,6 +18,7 @@ UnionFind criar_unionfind(int n){
 
 }
 
+//achar o pai e compressão
 int find(UnionFind *uf, int x){
     if (uf->pai[x] != x){
         uf->pai[x] = find(uf, uf->pai[x]);
@@ -30,7 +31,7 @@ void unir(UnionFind *uf, int a, int b){
     int raizA = find(uf, a);
     int raizB = find(uf, b);
 
-    if (raizA == raizB) return; //mesmo conjunto , precisa unir
+    if (raizA == raizB) return; //mesmo conjunto , precisa não precisa unir
 
     // faz união de raizes comparando rank par ver quem vai ser o "raiz"
     if (uf->rank[raizA] < uf->rank[raizB]) {
